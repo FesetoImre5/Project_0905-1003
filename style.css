@@ -1,0 +1,70 @@
+/*GENERAL*/
+
+body{
+    margin: 0;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+/*HEADER*/
+
+.head{
+    width: 100%;
+    height: 95px;
+    background-color: #3f486c;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.headImage{
+    height: 90px;
+    margin: 2.5px 5px 2.5px 10px;
+}
+
+.mainHeadDiv{
+    background-color: none;
+    width: 70%;
+    height: 95px;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.serviceList{
+    background-color: none;
+    width: 30%;
+    height: 95px;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+ul{
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+/*NAVIGATION*/
+
+@media (min-width: 800px){
+    .sidenav{
+        background-color: #3f486c;
+        min-width: 200px;
+        width: 20%;
+        height: 985px;
+        float: right;
+    }
+}
+
+@media (max-width: 800px){
+    .sidenav{
+        background-color: #3f486c;
+        width: 100%;
+        height: 25px;
+    }
+}
+
+/*INDEX*/
