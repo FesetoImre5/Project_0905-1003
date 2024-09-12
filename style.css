@@ -225,3 +225,24 @@ ul{
     margin: 10px auto;
     z-index: -2;
 }
+
+/**/
+* { box-sizing: border-box; }
+
+.carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
