@@ -1,5 +1,7 @@
 /*GENERAL*/
 
+
+
 body{
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -12,7 +14,11 @@ body{
     background-attachment: fixed;
 }
 
+
+
 /*HEADER*/
+
+
 
 @media (max-width:550px){
     .head{
@@ -20,6 +26,8 @@ body{
         top: 0;
     }
 }
+
+
 
 .head{
     width: 100%;
@@ -31,6 +39,8 @@ body{
     z-index: 2;
 }
 
+
+
 .mainHeadDiv{
     background-color: none;
     width: 15%;
@@ -40,6 +50,8 @@ body{
     flex-wrap: nowrap;
 }
 
+
+
 .nameDiv{
     font-size: larger;
     width: 70%;
@@ -47,11 +59,15 @@ body{
     justify-content: center;
 }
 
+
+
 .name{
     text-align: center;
     position: relative;
     top: -15px;
 }
+
+
 
 .accessability{
     background-color: none;
@@ -62,6 +78,8 @@ body{
     justify-content: right;
 }
 
+
+
 .listIcon{
     width: 25px;
     position: relative;
@@ -69,14 +87,26 @@ body{
     left: 2px;
 }
 
+
+
+.logo{
+    width: 94px;
+}
+
+
+
 @media (max-width:735px){
     .nameDiv{
         display: none;
     }
 
+
+
     .mainHeadDiv{
         width: 25%;
     }
+
+
 
     .accessability{
         width: 75%;
@@ -84,10 +114,14 @@ body{
         justify-content: right;
     }
 
+
+
     .name{
         display: none;
     }
 }
+
+
 
 ul{
     list-style: none;
@@ -95,7 +129,17 @@ ul{
     text-align: right;
 }
 
+
+
+a{
+    text-decoration: none;
+}
+
+
+
 /*NAVIGATION*/
+
+
 
 @media (max-width:550px){
     .sideNav{
@@ -106,28 +150,27 @@ ul{
         top: -330px;
         border-bottom: 5px solid white;
     }
-
     .sideNavBurg{
         width: 100%;
         height: 100%;
         overflow-y: hidden;
     }
-
     .sideNavBurg::-webkit-scrollbar{
         display: block;
         height: 5px;
     }
-    
     .sideNavBurg::-webkit-scrollbar-thumb{
         background-color: #8797d6;
     }
-    
     .sideNavBurg::-webkit-scrollbar-thumb:hover{
         background-color: #bfcaf8;
     }
 
+
+
+
     .sideNavButton{
-        width: 90%;
+        width: 240px;
         display: block;
         margin: 5px auto;
         border: 2px solid white;
@@ -136,16 +179,22 @@ ul{
         text-decoration: none;
         color: white;
     }
-
+    .sideNavButton:hover{
+        background-color: #8797d6;
+    }
     .sideNavButton h4{
         margin: 5px;
     }
+
+
 
     .navImage{
         width: 125px;
         display: block;
         margin: auto;
     }
+
+
 
     .openButton{
         background-color: #3f486c;
@@ -159,6 +208,8 @@ ul{
         border-bottom-right-radius: 25px;
     }
 
+
+
     .navButton{
         border: 2px solid white;
         border-radius: 10px;
@@ -167,11 +218,12 @@ ul{
         display: block;
         margin: 10px auto;
     }
-
     .navButton a{
         font-size: x-large;
     }
 }
+
+
 
 @media (min-width:550px){
     .sideNav{
@@ -182,7 +234,6 @@ ul{
         position: sticky;
         top: 0;
     }
-
     .sideNavBurg{
         display: flex;
         overflow-y: hidden;
@@ -190,22 +241,21 @@ ul{
         height: 50px;
         width: 100%;
     }
-    
     .sideNavBurg::-webkit-scrollbar{
         display: block;
         height: 5px;
     }
-    
     .sideNavBurg::-webkit-scrollbar-thumb{
         background-color: #8797d6;
     }
-    
     .sideNavBurg::-webkit-scrollbar-thumb:hover{
         background-color: #bfcaf8;
     }
     
+
+
     .sideNavButton{
-        width: 210px;
+        width: 240px;
         height: 30px;
         border: 2px solid white;
         display: block;
@@ -215,11 +265,15 @@ ul{
         text-decoration: none;
         color: white;
     }
-    
+    .sideNavButton:hover{
+        background-color: #8797d6;
+    }
     .sideNavButton h4{
         position: relative;
         top: -17px;
     }
+
+
 
     .navImage{
         height: 50px;
@@ -231,33 +285,73 @@ ul{
 
 .carousel {
     position: relative;
-    width: 270px;
-    height: 160px;
+    width: 540px;
+    height: 320px;
     overflow: hidden;
-    background-color: #cdcdcd;
+    border-radius: 25px;
+    border: 5px solid white;
 }
-
 .carousel-item .slide-image {
-    width: 270px;
-    height: 160px;
+    width: 540px;
+    height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .carousel-item {
     position: absolute;
     width: 100%;
-    height: 270px;
+    height: 540px;
     border: none;
-    top: 0;
     left: 100%;
+    position: absolute;
+    top: 0;
 }
-
 .carousel-item.active {
     left: 0;
     transition: all 0.3s ease-out;
 }
-
 .carousel-item div {
     height: 100%;
+}
+
+
+
+.contentDiv{
+    background-color: rgba(255,255,255,0.25);
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+}
+.content_NameDiv{
+    background-color: rgba(0,0,0,0.25);
+    margin: 10px 0;
+    width: 65%;
+    height: 85px;
+    border-radius: 100px;
+}
+.contentDiv h1, .contentDiv h3{
+    color: white;
+    position: relative;
+    top: -90px;
+}
+.contentDiv h3{
+    position: relative;
+    top: -110px;
+}
+
+
+
+.nameLogo{
+    width: 75px;
+    position: relative;
+}
+.left{
+    left: -350px;
+    top: 5px;
+}
+.right{
+    right: -350px;
+    top: 5px;
 }
