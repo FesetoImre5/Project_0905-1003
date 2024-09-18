@@ -216,33 +216,35 @@ ul{
 
 /*INDEX*/
 
-.bodyDiv{
-    width: 75%;
-    height: 1000px;
-    background-color: rgba(255,255,255,0.5);
+.carousel {
+    position: relative;
+    width: 270px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #cdcdcd;
+}
+
+.carousel-item .slide-image {
+    width: 270px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 270px;
     border: none;
-    display: block;
-    margin: 10px auto;
-    z-index: -2;
+    top: 0;
+    left: 100%;
 }
 
-/**/
-* { box-sizing: border-box; }
-
-.carousel-container {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
+.carousel-item.active {
+    left: 0;
+    transition: all 0.3s ease-out;
 }
 
-.carousel-slide {
-  display: none;
-  width: 100%;
-  position: absolute;
-  transition: opacity 1s ease-in-out;
-}
-
-.carousel-slide img {
-  width: 100%;
+.carousel-item div {
+    height: 100%;
 }

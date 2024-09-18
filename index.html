@@ -75,32 +75,23 @@
         </div>
     </div>
 
-    <div class="bodyDiv">
-        <div class="carousel-container">
-            <div class="carousel-slide">
-              <img src="Assets/Slide-Placeholder1.jpg" alt="Image 1">
+    <div class="carousel">
+        <div class="carousel-item">
+            <div class="slide-image"
+                style="background-image: 
+url(/Assets/Slide-Placeholder1.jpg);">
             </div>
-            <div class="carousel-slide">
-              <img src="Assets/Slide-Placeholder2.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <div class="slide-image"
+                style="background-image: 
+url(/Assets/Slide-Placeholder2.jpg);">
             </div>
-          </div>
+        </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
 
-<script>
-let slideIndex = 0;
-let slides = document.getElementsByClassName("carousel-slide");
 
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-showSlides();
-</script>
