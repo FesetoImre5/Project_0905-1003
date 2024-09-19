@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/PlaceholderIcon.webp">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&subset=latin" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
     <title>Szent Benedek PG Technikum</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
+    <div class="sideNav" id="sideNav">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -72,63 +72,36 @@
                 </div>
             </a>
         </div>
-    </div>
-    <div class="openButton" onclick="openClose()" id="OpenButton">
-        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
+        <div class="openButton" onclick="openClose()">
+            <img src="" alt="">
+        </div>
     </div>
 
     <div class="contentDiv">
-        <center>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/openDays.webp);">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/openDays.webp);">
-                    </div>
-                </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Assets/background.webp" alt="Image 1" class="popup-trigger">
+                <div class="overlay">Image 1</div>
             </div>
-        </center>
-
-        <div class="ourList">
-            <div class="schoolHistory">
-                <h2 class="listText" id="listText">
-                    Iskolatörténet
-                </h2>
+            <div class="gallery-item">
+                <img src="Assets/Slide-Placeholder1.jpg" alt="Image 2" class="popup-trigger">
+                <div class="overlay">Image 2</div>
             </div>
-            <div class="ourRaces">
-                <h2 class="listText" id="listText">
-                    Versenyeink
-                </h2>
+            <div class="gallery-item">
+                <img src="Assets/Slide-Placeholder2.jpg" alt="Image 3" class="popup-trigger">
+                <div class="overlay">Image 3</div>
             </div>
-            <div class="inTaking">
-                <h2 class="listText" id="listText">
-                    Beiskolázás
-                </h2>
-            </div>
+            <!-- Add more images as needed -->
         </div>
-
-        <div class="texts">
-            <center>
-                <h1>Példacím</h1>
-            </center>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur natus nostrum explicabo quis ipsam rem! Sequi, veritatis fugit voluptas eius doloribus delectus doloremque fugiat qui est, repellendus itaque eaque.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum maxime neque facilis, in eaque, modi nesciunt accusantium sunt illo, harum est magni quaerat doloribus mollitia? Deleniti sequi quia ut!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptate nisi culpa sunt eos. Porro atque voluptate assumenda maxime? Iure, corrupti ipsam beatae doloremque fuga enim totam. Dignissimos, iste officiis!
-            </p>
+    
+        <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">×</span>
+            <button class="prev" onclick="prevImage()" style="left: 0;">❮</button>
+            <img class="popup-content" id="popup-img">
+            <button class="next" onclick="nextImage()">❯</button>
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
-

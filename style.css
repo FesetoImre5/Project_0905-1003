@@ -1,0 +1,520 @@
+/*GENERAL*/
+
+
+
+body{
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    background-image: url(Assets/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 42.5%, -200px;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+
+/*HEADER*/
+
+
+
+@media (max-width:550px){
+    .head{
+        position: sticky;
+        top: 0;
+    }
+}
+
+
+
+.head{
+    width: 100%;
+    height: 95px;
+    background-color: #3f486c;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 2;
+}
+
+
+
+.mainHeadDiv{
+    background-color: none;
+    width: 15%;
+    height: 95px;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+.nameDiv{
+    font-size: larger;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.name{
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+
+
+.accessability{
+    background-color: none;
+    width: 15%;
+    height: 95px;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.listIcon{
+    width: 25px;
+    position: relative;
+    top: 7px;
+    left: 2px;
+}
+
+
+
+.logo{
+    width: 94px;
+}
+
+
+
+@media (max-width:850px){
+    .nameDiv{
+        display: none;
+    }
+
+
+
+    .mainHeadDiv{
+        width: 25%;
+    }
+
+
+
+    .accessability{
+        width: 75%;
+        display: flex;
+        justify-content: right;
+    }
+
+
+
+    .name{
+        display: none;
+    }
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*NAVIGATION*/
+
+
+
+@media (max-width:550px){
+    .sideNav{
+        width: 100%;
+        height: 420px;
+        background-color: #3f486c;
+        position: fixed;
+        top: 95px;
+        border-bottom: 5px solid white;
+        z-index: 99;
+    }
+    .sideNavBurg{
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .sideNavBurg::-webkit-scrollbar{
+        display: block;
+        height: 5px;
+    }
+    .sideNavBurg::-webkit-scrollbar-thumb{
+        background-color: #8797d6;
+    }
+    .sideNavBurg::-webkit-scrollbar-thumb:hover{
+        background-color: #bfcaf8;
+    }
+
+
+
+
+    .sideNavButton{
+        width: 240px;
+        display: block;
+        margin: 5px auto;
+        border: 2px solid white;
+        border-radius: 25px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    .sideNavButton:hover{
+        background-color: #8797d6;
+    }
+    .sideNavButton h4{
+        margin: 5px;
+    }
+
+
+
+    .navImage{
+        width: 125px;
+        display: block;
+        margin: auto;
+    }
+
+
+
+    .openButton{
+        background-color: #3f486c;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        border: 5px solid white;
+        border-top: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        z-index: 100;
+        text-align: center;
+    }
+    .openButton img{
+        z-index: 100;
+        width: 30px;
+    }
+
+
+
+    .navButton{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 80%;
+        height: 37px;
+        display: block;
+        margin: 10px auto;
+    }
+    .navButton a{
+        font-size: x-large;
+    }
+}
+
+
+
+@media (min-width:551px){
+    .sideNav{
+        width: 100%;
+        height: 50px;
+        background-color: #3f486c;
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+    }
+    .sideNavBurg{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 50px;
+        width: 100%;
+    }
+    .sideNavBurg::-webkit-scrollbar{
+        display: block;
+        height: 5px;
+    }
+    .sideNavBurg::-webkit-scrollbar-thumb{
+        background-color: #8797d6;
+    }
+    .sideNavBurg::-webkit-scrollbar-thumb:hover{
+        background-color: #bfcaf8;
+    }
+    
+
+
+    .sideNavButton{
+        width: 240px;
+        height: 30px;
+        border: 2px solid white;
+        display: block;
+        margin: 7.5px;
+        border-radius: 25px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    .sideNavButton:hover{
+        background-color: #8797d6;
+    }
+    .sideNavButton h4{
+        position: relative;
+        top: -17px;
+    }
+
+
+
+    .openButton{
+        background-color: #3f486c;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        border: 5px solid white;
+        border-top: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        z-index: 100;
+        text-align: center;
+        display: none;
+    }
+    .openButton img{
+        z-index: 100;
+        width: 30px;
+        display: none;
+    }
+
+
+
+    .navImage{
+        height: 50px;
+        margin: 2.5px 5px 2.5px 10px;
+    }
+}
+
+/*INDEX*/
+
+@media (min-width: 735px){
+    .carousel {
+        position: relative;
+        width: 540px;
+        height: 224px;
+        overflow: hidden;
+        border-radius: 25px;
+        border: 5px solid white;
+    }
+    .carousel-item .slide-image {
+        width: 540px;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 224px;
+        border: none;
+        left: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .carousel-item.active {
+        left: 0;
+        transition: all 0.3s ease-out;
+    }
+    .carousel-item div {
+        height: 100%;
+    }
+}
+
+
+
+.contentDiv{
+    background-color: rgba(255,255,255,0.25);
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+
+@keyframes scaleTurn{
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform: scale(1.15) rotate(10deg);
+    }
+}
+@keyframes scaleTurnBack{
+    from{
+        transform: scale(1.15) rotate(10deg);
+    }
+    to{
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+
+.ourList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ourList div{
+    display: block;
+    width: 313px;
+    height: 197px;
+    margin: 10px auto;
+    border-radius: 25px;
+    animation-name: scaleTurnBack;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.ourList div:hover{
+    animation-name: scaleTurn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform: scale(1.15) rotate(10deg);
+}
+.ourList .schoolHistory{
+    background-image: url(Assets/tortenet.webp);
+    background-size: contain;
+}
+.ourList .ourRaces{
+    background-image: url(Assets/verseny.webp);
+    background-size: contain;
+}
+.ourList .inTaking{
+    background-image: url(Assets/beiskolazas.webp);
+    background-size: contain;
+}
+
+
+
+.listText{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+
+/*GALLERY*/
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1; /* Default z-index */
+}
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+
+.popup {
+    display: none; /* Ensure the popup is hidden by default */
+    position: fixed;
+    z-index: 100; /* Popup z-index */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    max-width: 70%;
+    max-height: 70%;
+    min-height: 40%;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
