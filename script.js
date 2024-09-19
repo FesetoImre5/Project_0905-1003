@@ -1,6 +1,5 @@
 window.onload = function () {
-    let slides = 
-        document.getElementsByClassName('carousel-item');
+    let slides = document.getElementsByClassName('carousel-item');
 
     function addActive(slide) {
         slide.classList.add('active');
@@ -26,6 +25,41 @@ window.onload = function () {
         }
     }, 2250);
 };
+
+let currentIndex = 0;
+let images = [];
+
+document.addEventListener('DOMContentLoaded', function() {
+    images = document.querySelectorAll('.popup-trigger');
+    images.forEach((item, index) => {
+        item.addEventListener('click', event => {
+            currentIndex = index;
+            showPopup(event.target.src);
+        });
+    });
+});
+
+function showPopup(src) {
+    var popup = document.getElementById("popup");
+    var popupImg = document.getElementById("popup-img");
+    popup.style.display = "flex";
+    popupImg.src = src;
+}
+
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+function prevImage() {
+    currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+    showPopup(images[currentIndex].src);
+}
+
+function nextImage() {
+    currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+    showPopup(images[currentIndex].src);
+}
 
 function openClose(){
     let sideNavBar = document.getElementById("sideNavCollapsed");
