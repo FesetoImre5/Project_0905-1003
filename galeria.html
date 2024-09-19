@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
     <link rel="icon" href="Assets/PlaceholderIcon.webp">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&subset=latin" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
     <title>Szent Benedek PG Technikum</title>
 </head>
 <body>
@@ -76,30 +77,27 @@
     </div>
 
     <div class="contentDiv">
-        <center>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder1.jpg);">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder2.jpg);">
-                    </div>
-                </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Assets/background.webp" alt="Image 1" class="popup-trigger">
             </div>
-            <div class="content_NameDiv">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo left">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo right">
-                <h1>Kiskunfélegyházi Szent Benedek PG</h1>
-                <h3>Két tanítási nyelvű technikum és kollégium</h3>
+            <div class="gallery-item">
+                <img src="Assets/Slide-Placeholder1.jpg" alt="Image 2" class="popup-trigger">
             </div>
-        </center>
+            <div class="gallery-item">
+                <img src="Assets/Slide-Placeholder2.jpg" alt="Image 3" class="popup-trigger">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    
+        <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">×</span>
+            <button class="prev" onclick="prevImage()" style="left: 0;">❮</button>
+            <img class="popup-content" id="popup-img">
+            <button class="next" onclick="nextImage()">❯</button>
+        </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
-
