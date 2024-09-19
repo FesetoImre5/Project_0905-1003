@@ -24,5 +24,33 @@ window.onload = function () {
                 break;
             }
         }
-    }, 1500);
+    }, 2250);
 };
+
+function openClose(){
+    let sideNavBar = document.getElementById("sideNavCollapsed");
+    let openButton = document.getElementById("OpenButton");
+    let openArrow = document.getElementById("OpenArrow");
+
+    if (sideNavBar.style.display == "none"){
+        sideNavBar.style.display = "block";
+        openButton.style.top = "515px";
+        openArrow.style.transform = "rotate(180deg)";
+    }
+    else{
+        sideNavBar.style.display = "none";
+        openButton.style.top = "95px";
+        openArrow.style.transform = "rotate(0deg)";
+    }
+}
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 550) {
+        let sideNavBar = document.getElementById("sideNavCollapsed");
+        sideNavBar.style.display = "none";
+    }
+    else{
+        let sideNavBar = document.getElementById("sideNavCollapsed");
+        sideNavBar.style.display = "block";
+    }
+});

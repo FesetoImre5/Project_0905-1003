@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-position: 42.5%, -200px;
     background-attachment: fixed;
+    color: white;
 }
 
 
@@ -22,7 +23,7 @@ body{
 
 @media (max-width:550px){
     .head{
-        position: fixed;
+        position: sticky;
         top: 0;
     }
 }
@@ -95,7 +96,7 @@ body{
 
 
 
-@media (max-width:735px){
+@media (max-width:850px){
     .nameDiv{
         display: none;
     }
@@ -147,8 +148,9 @@ a{
         height: 420px;
         background-color: #3f486c;
         position: fixed;
-        top: -330px;
+        top: 95px;
         border-bottom: 5px solid white;
+        z-index: 99;
     }
     .sideNavBurg{
         width: 100%;
@@ -199,13 +201,19 @@ a{
     .openButton{
         background-color: #3f486c;
         width: 50px;
-        height: 50px;
+        height: 40px;
         position: absolute;
         right: 10px;
         border: 5px solid white;
         border-top: none;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        z-index: 100;
+        text-align: center;
+    }
+    .openButton img{
+        z-index: 100;
+        width: 30px;
     }
 
 
@@ -225,7 +233,7 @@ a{
 
 
 
-@media (min-width:550px){
+@media (min-width:551px){
     .sideNav{
         width: 100%;
         height: 50px;
@@ -275,6 +283,28 @@ a{
 
 
 
+    .openButton{
+        background-color: #3f486c;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        border: 5px solid white;
+        border-top: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        z-index: 100;
+        text-align: center;
+        display: none;
+    }
+    .openButton img{
+        z-index: 100;
+        width: 30px;
+        display: none;
+    }
+
+
+
     .navImage{
         height: 50px;
         margin: 2.5px 5px 2.5px 10px;
@@ -283,35 +313,37 @@ a{
 
 /*INDEX*/
 
-.carousel {
-    position: relative;
-    width: 540px;
-    height: 320px;
-    overflow: hidden;
-    border-radius: 25px;
-    border: 5px solid white;
-}
-.carousel-item .slide-image {
-    width: 540px;
-    height: 320px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 540px;
-    border: none;
-    left: 100%;
-    position: absolute;
-    top: 0;
-}
-.carousel-item.active {
-    left: 0;
-    transition: all 0.3s ease-out;
-}
-.carousel-item div {
-    height: 100%;
+@media (min-width: 735px){
+    .carousel {
+        position: relative;
+        width: 540px;
+        height: 224px;
+        overflow: hidden;
+        border-radius: 25px;
+        border: 5px solid white;
+    }
+    .carousel-item .slide-image {
+        width: 540px;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 224px;
+        border: none;
+        left: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .carousel-item.active {
+        left: 0;
+        transition: all 0.3s ease-out;
+    }
+    .carousel-item div {
+        height: 100%;
+    }
 }
 
 
@@ -324,34 +356,67 @@ a{
     padding: 10px;
     border-radius: 25px;
 }
-.content_NameDiv{
-    background-color: rgba(0,0,0,0.25);
-    margin: 10px 0;
-    width: 65%;
-    height: 85px;
-    border-radius: 100px;
+
+
+
+@keyframes scaleTurn{
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform: scale(1.15) rotate(10deg);
+    }
 }
-.contentDiv h1, .contentDiv h3{
+@keyframes scaleTurnBack{
+    from{
+        transform: scale(1.15) rotate(10deg);
+    }
+    to{
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+
+.ourList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ourList div{
+    display: block;
+    width: 313px;
+    height: 197px;
+    margin: 10px auto;
+    border-radius: 25px;
+    animation-name: scaleTurnBack;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.ourList div:hover{
+    animation-name: scaleTurn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform: scale(1.15) rotate(10deg);
+}
+.ourList .schoolHistory{
+    background-image: url(Assets/tortenet.webp);
+    background-size: contain;
+}
+.ourList .ourRaces{
+    background-image: url(Assets/verseny.webp);
+    background-size: contain;
+}
+.ourList .inTaking{
+    background-image: url(Assets/beiskolazas.webp);
+    background-size: contain;
+}
+
+
+
+.listText{
     color: white;
-    position: relative;
-    top: -90px;
-}
-.contentDiv h3{
-    position: relative;
-    top: -110px;
-}
-
-
-
-.nameLogo{
-    width: 75px;
-    position: relative;
-}
-.left{
-    left: -350px;
-    top: 5px;
-}
-.right{
-    right: -350px;
-    top: 5px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
 }
