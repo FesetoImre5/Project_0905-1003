@@ -4,6 +4,10 @@
 
 body{
     margin: 0;
+<<<<<<< Updated upstream
+=======
+    padding-bottom: 0;
+>>>>>>> Stashed changes
     font-family: Verdana, sans-serif;
     font-weight: 300;
     overflow-x: hidden;
@@ -359,6 +363,28 @@ a{
 
 
 
+<<<<<<< Updated upstream
+=======
+footer{
+    background-color: #3f486c;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 -16px 0;
+    padding-bottom: 1px;
+}
+.footerImageFlex{
+    display: flex;
+    text-align: center;
+}
+.footerImageFlex img{
+    width: 255px;
+    display: block;
+    margin: auto;
+}
+
+
+
+>>>>>>> Stashed changes
 @keyframes scaleTurn{
     from{
         transform: scale(1) rotate(0deg);
