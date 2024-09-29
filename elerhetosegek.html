@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/PlaceholderIcon.webp">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <title>Szent Benedek PG Technikum</title>
 </head>
 <body>
     <div class="head">
         <div class="mainHeadDiv">
-            <img src="Assets/Logo.webp" alt="Logo" title="A Kiskunfélegyházi Szent Benedek PG logója" class="logo headImage">
+            <a href="index.html">
+                <img src="Assets/Logo.webp" alt="Logo" title="A Kiskunfélegyházi Szent Benedek PG logója" class="logo headImage">
+            </a>
         </div>
         <div class="nameDiv">
             <h2 class="name">Kiskunfélegyházi Szent Benedek PG Technikum és Kollégium</h2>
@@ -24,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNav">
+    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -70,35 +72,61 @@
                 </div>
             </a>
         </div>
-        <div class="openButton" onclick="openClose()">
-            <img src="" alt="">
-        </div>
+    </div>
+    <div class="openButton" onclick="openClose()" id="OpenButton">
+        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
     </div>
 
     <div class="contentDiv">
-        <center>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder1.jpg);">
-                    </div>
+        <div class="subContentDiv">
+            <div class="contents">
+                <h2>Elérhetőségeink</h2>
+                <div class="platformList">
+                    <a href="#">
+                        <img src="Assets/TwitX_logo.webp" alt="Logo_TwitX" title="Twitter/X Logo">
+                    </a>
+                    <a href="#">
+                        <img src="Assets/Facebook_logo.webp" alt="Logo_Facebook" title="Facebook Logo">
+                    </a>
+                    <a href="#">
+                        <img src="Assets/Pinterest_logo.webp" alt="Logo_Pinterest" title="Pinterest Logo">
+                    </a>
+                    <a href="#">
+                        <img src="Assets/linkedIn_logo.webp" alt="Logo_LinkedIn" title="LinkedIn Logo">
+                    </a>
+                    <a href="#">
+                        <img src="Assets/Tumblr_logo.webp" alt="Logo_Tumblr" title="Tumblr Logo">
+                    </a>
+                    <a href="#">
+                        <h2>U</h2>
+                    </a>
                 </div>
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder2.jpg);">
-                    </div>
-                </div>
+                <h5>Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum és Kollégium</h5>
+                <p>OM: 203365</p>
+                <p>6100 Kiskunfélegyháza, Kossuth u. 24.</p>
+                <p>titkarsag@szbi-pg.hu</p>
+                <p>+36 76 462 332</p>
+                <p>Mellékek:</p>
+                <p class="inset">11 - titkárság</p>
+                <p class="inset">14 - tanári</p>
+                <p class="inset">15 - kollégium</p>
+                <p class="inset">16 - könyvtár</p>
             </div>
-            <div class="content_NameDiv">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo left">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo right">
-                <h1>Kiskunfélegyházi Szent Benedek PG</h1>
-                <h3>Két tanítási nyelvű technikum és kollégium</h3>
+            <div class="map">
+                <h1>Térkép</h1>
             </div>
-        </center>
+        </div>
     </div>
 
-    <script src="./script.js"></script>
+    <footer>
+        <div class="footerImageFlex">
+            <img src="Assets/cisco.webp" alt="cisco" title="Cisco - Networking Academy">
+            <img src="Assets/oracle.webp" alt="oracle" title="Oracle Academy">
+            <img src="Assets/aws.webp" alt="aws academy" title="aws academy - Member Institution">
+            <img src="Assets/logo_hat.webp" alt="határtalanul" title="Határtalanul! - megvalósult a magyar kormány támogatásával">
+        </div>
+        <p>© 2019 PG</p>
+    </footer>
 </body>
 </html>
 
