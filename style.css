@@ -379,6 +379,13 @@ a{
     .carousel-item div {
         height: 100%;
     }
+
+    .openDaysImage{
+        width: 540px;
+        height: 224px;
+        overflow: hidden;
+        border-radius: 25px;
+    }
 }
 
 

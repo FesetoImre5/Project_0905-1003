@@ -1,4 +1,6 @@
-setTimeout(function () {
+//This won't work for some reason... I'm not sure why.
+
+/*window.onload = function () {
     let slides = document.getElementsByClassName('carousel-item');
 
     function addActive(slide) {
@@ -11,7 +13,7 @@ setTimeout(function () {
 
     addActive(slides[0]);
     setInterval(function () {
-        for (let i = 0; i < slides.length; i++) {
+        for (let i = 0; i <= slides.length; i++) {
             if (i + 1 == slides.length) {
                 addActive(slides[0]);
                 setTimeout(removeActive, 350, slides[i]);
@@ -24,7 +26,7 @@ setTimeout(function () {
             }
         }
     }, 2250);
-},1);
+};*/
 
 let currentIndex = 0;
 let images = [];
