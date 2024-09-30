@@ -81,6 +81,15 @@ function openClose(){
 }
 
 setTimeout(function() {
+    if (window.innerWidth <= 735){
+        let openDaysImage = document.getElementById("openDaysImage");
+        openDaysImage.style.display = "none";
+    }
+    else {
+        let openDaysImage = document.getElementById("openDaysImage");
+        openDaysImage.style.display = "block";
+    }
+
     if (window.innerWidth <= 550){
         let sideNavBar = document.getElementById("sideNavCollapsed");
         sideNavBar.style.display = "none";
@@ -99,5 +108,14 @@ window.addEventListener('resize', function() {
     else{
         let sideNavBar = document.getElementById("sideNavCollapsed");
         sideNavBar.style.display = "block";
+    }
+
+    if (window.innerWidth <= 735){
+        let openDaysImage = document.getElementById("openDaysImage");
+        openDaysImage.style.display = "none";
+    }
+    else {
+        let openDaysImage = document.getElementById("openDaysImage");
+        openDaysImage.style.display = "block";
     }
 });

@@ -348,12 +348,6 @@ a{
 
 
 
-.openDaysImage{
-    display: none;
-}
-
-
-
 @media (min-width: 735px){
     .carousel {
         position: relative;
