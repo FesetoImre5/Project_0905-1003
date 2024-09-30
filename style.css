@@ -348,6 +348,12 @@ a{
 
 
 
+.openDaysImage{
+    display: none;
+}
+
+
+
 @media (min-width: 735px){
     .carousel {
         position: relative;
@@ -380,9 +386,10 @@ a{
         height: 100%;
     }
 
-    
+
 
     .openDaysImage{
+        display: block;
         width: 540px;
         height: 224px;
         overflow: hidden;
