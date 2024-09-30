@@ -78,6 +78,17 @@ function openClose(){
     }
 }
 
+setTimeout(function() {
+    if (window.innerWidth <= 550){
+        let sideNavBar = document.getElementById("sideNavCollapsed");
+        sideNavBar.style.display = "none";
+    }
+    else{
+        let sideNavBar = document.getElementById("sideNavCollapsed");
+        sideNavBar.style.display = "block";
+    }
+},1);
+
 window.addEventListener('resize', function() {
     if (window.innerWidth <= 550) {
         let sideNavBar = document.getElementById("sideNavCollapsed");
