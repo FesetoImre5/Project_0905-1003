@@ -1,4 +1,4 @@
-window.onload = function () {
+setTimeout(function () {
     let slides = document.getElementsByClassName('carousel-item');
 
     function addActive(slide) {
@@ -24,7 +24,7 @@ window.onload = function () {
             }
         }
     }, 2250);
-};
+},1);
 
 let currentIndex = 0;
 let images = [];
