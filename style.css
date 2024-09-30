@@ -15,6 +15,21 @@ body{
     background-attachment: fixed;
     color: white;
 }
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #3f486c;
+    border-left: 2px solid #bfcaf8;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #8797d6;
+    border-left: 2px solid #bfcaf8;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #bfcaf8;
+    border-left: 2px solid #fff;
+}
 
 
 
@@ -56,7 +71,7 @@ body{
 
 .nameDiv{
     font-size: larger;
-    width: 70%;
+    width: 55%;
     display: flex;
     justify-content: center;
 }
@@ -73,7 +88,7 @@ body{
 
 .accessability{
     background-color: none;
-    width: 15%;
+    width: 30%;
     height: 95px;
     margin: 0;
     display: flex;
@@ -97,7 +112,7 @@ body{
 
 
 
-@media (max-width:850px){
+@media (max-width:974px){
     .nameDiv{
         display: none;
     }
@@ -105,15 +120,15 @@ body{
 
 
     .mainHeadDiv{
-        width: 25%;
+        width: 53%;
     }
 
 
 
     .accessability{
-        width: 75%;
-        display: flex;
-        justify-content: right;
+        width: 47%;
+        right: 0;
+        position: fixed;
     }
 
 
@@ -122,12 +137,21 @@ body{
         display: none;
     }
 }
+@media (max-width:500px){
+    .accessability{
+        width: 75%;
+    }
+
+    .mainHeadDiv{
+        width: 25%;
+    }
+}
 
 
 
 ul{
     list-style: none;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 -10px;
     text-align: right;
 }
 
@@ -209,7 +233,7 @@ a{
         background-color: #3f486c;
         width: 50px;
         height: 40px;
-        position: absolute;
+        position: fixed;
         right: 10px;
         border: 5px solid white;
         border-top: none;
@@ -379,7 +403,10 @@ footer{
 }
 .footerImageFlex{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    padding-top: 10px;
 }
 .footerImageFlex img{
     width: 255px;
@@ -673,4 +700,52 @@ footer{
 }
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+/*CO-WORKERS*/
+
+
+
+.commandment{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.listTitle{
+    margin-bottom: -5px;
+}
+
+
+
+.personBackground{
+    background-color: rgba(0,0,0,0.5);
+    width: 210px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px 10px;
+}
+.person{
+    width: 160px;
+    padding: 25px;
+    background-image: url(Assets/Logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.personBackground p{
+    margin: 10px 0;
+    text-align: center;
+}
+.personImage{
+    width: 160px;
+    border-radius: 150px;
+}
+.personName{
+    text-align: center;
+    margin: 5px 0;
 }

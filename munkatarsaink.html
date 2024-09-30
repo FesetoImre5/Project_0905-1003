@@ -26,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNav">
+    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -72,32 +72,239 @@
                 </div>
             </a>
         </div>
-        <div class="openButton" onclick="openClose()">
-            <img src="" alt="">
-        </div>
+    </div>
+    <div class="openButton" onclick="openClose()" id="OpenButton">
+        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
     </div>
 
     <div class="contentDiv">
         <center>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder1.jpg);">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-image"
-                        style="background-image: url(/Assets/Slide-Placeholder2.jpg);">
-                    </div>
-                </div>
-            </div>
-            <div class="content_NameDiv">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo left">
-                <img src="Assets/Logo.webp" alt="img_contentDivNameLogo" title="Logo" class="nameLogo right">
-                <h1>Kiskunfélegyházi Szent Benedek PG</h1>
-                <h3>Két tanítási nyelvű technikum és kollégium</h3>
-            </div>
+            <h1 class="listTitle">Vezetőség</h1>
         </center>
+        <div class="commandment">
+            <div class="personBackground">
+                <h3 class="personName">Rokolya Csaba</h3>
+                <div class="person">
+                    <img src="Assets/Rokolya Csaba.webp" alt="Image_RokolyaCsaba" title="Rokolya Csaba igazgató" class="personImage">
+                </div>
+                <p>igazgató</p>
+                <p>informatikus mérnöktanár</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Dobos László</h3>
+                <div class="person">
+                    <img src="Assets/Dobos László.webp" alt="Image_DobosLaszlo" title="Rokolya Csaba igazgatóhelyettes" class="personImage">
+                </div>
+                <p>igazgatóhelyettes</p>
+                <p>szakirányú oktatásért felelős</p>
+                <p>informatika</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Gálfi Tamás Imre</h3>
+                <div class="person">
+                    <img src="Assets/Gálfi Tamás.webp" alt="Image_GalfiTamas" title="Gálfi Tamás kollégiumvezető" class="personImage">
+                </div>
+                <p>kollégiumvezető</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Tóth Tímea</h3>
+                <div class="person">
+                    <img src="Assets/Tóth Tímea.webp" alt="Image_TothTimea" title="Tóth Tímea igazgatóhelyettes" class="personImage">
+                </div>
+                <p>nevelési igazgatóhelyettes</p>
+                <p>12.a osztályfőnök</p>
+                <p>német nyelv</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Szabó Anikó</h3>
+                <div class="person">
+                    <img src="Assets/Seres Anikó.webp" alt="Image_SzaboAniko" title="Szabó Anikó Gazdasági Vezető" class="personImage">
+                </div>
+                <p>gazdasági vezető</p>
+            </div>
+        </div>
+
+
+
+        <center>
+            <h1 class="listTitle">Oktatók</h1>
+        </center>
+        <div class="commandment">
+            <div class="personBackground">
+                <h3 class="personName">Csősz Beáta</h3>
+                <div class="person">
+                    <img src="Assets/Csősz Beáta.webp" alt="Image_CsoszBeata" title="Csősz Beáta tanárnő" class="personImage">
+                </div>
+                <p>12.d osztályfőnök</p>
+                <p>magyar nyelv és irodalom</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Grósz Erika</h3>
+                <div class="person">
+                    <img src="Assets/female.webp" alt="Image_blankFemale" title="Grósz Erika tanárnő" class="personImage">
+                </div>
+                <p>hittan</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Juhász Szabolcs</h3>
+                <div class="person">
+                    <img src="Assets/male.webp" alt="Image_blankMale" title="Juhász Szabolcs tanárúr" class="personImage">
+                </div>
+                <p>informatika</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Kiss Gábor István</h3>
+                <div class="person">
+                    <img src="Assets/Kiss Gábor.webp" alt="Image_KissGabor" title="Kiss Gábor tanárúr" class="personImage">
+                </div>
+                <p>12.i osztályfőnök</p>
+                <p>informatika</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Kun Tímea</h3>
+                <div class="person">
+                    <img src="Assets/Kun_Tímea.webp" alt="Image_KunTimea" title="Kun Tímea tanárnő" class="personImage">
+                </div>
+                <p>angol nyelv</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Pásztor Zoltán Albert</h3>
+                <div class="person">
+                    <img src="Assets/Pásztor Zoltán.webp" alt="Image_PasztorZoltan" title="Pásztor Zoltán tanárúr" class="personImage">
+                </div>
+                <p>11.i osztályfőnök</p>
+                <p>informatika</p>
+            </div>
+        </div>
+
+
+
+        <center>
+            <h1 class="listTitle">Óraadó oktatók</h1>
+        </center>
+        <div class="commandment">
+            <div class="personBackground">
+                <h3 class="personName">Alács Gyula</h3>
+                <div class="person">
+                    <img src="Assets/Alács Gyula.webp" alt="Image_AlacsGyula" title="Alács Gyula tanárúr" class="personImage">
+                </div>
+                <p>testnevelés</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Czakóné Kállai Ildikó</h3>
+                <div class="person">
+                    <img src="Assets/Czakóné Kállai Ildikó.webp" alt="Image_CzakoneKallaiIldiko" title="Kállai Ildikó tanárnő" class="personImage">
+                </div>
+                <p>fejlesztőpedagógus</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Csenkiné Bihal Mária Magdolna</h3>
+                <div class="person">
+                    <img src="Assets/Csenkiné Bihal Mária.webp" alt="Image_CsenkineBihalMaria" title="Bihal Mária tanárnő" class="personImage">
+                </div>
+                <p>gépírás</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Gémesné Farkas Anikó</h3>
+                <div class="person">
+                    <img src="Assets/Gémesné Farkas Anikó.webp" alt="Image_GemesneFarkasAniko" title="Farkas Anikó tanárnő" class="personImage">
+                </div>
+                <p>fejlesztőpedagógus</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Göcs László</h3>
+                <div class="person">
+                    <img src="Assets/Göcs László.webp" alt="Image_GocsLaszlo" title="Göcs László tanárúr" class="personImage">
+                </div>
+                <p>informatika</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Kertészné Uredat Dagmar</h3>
+                <div class="person">
+                    <img src="Assets/female.webp" alt="Image_blankFemale" title="Uredat Dagmar tanárnő" class="personImage">
+                </div>
+                <p>német lektor</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Kovács Éva</h3>
+                <div class="person">
+                    <img src="Assets/Kovács Éva.webp" alt="Image_KovacsEva" title="Kovács Éva tanárnő" class="personImage">
+                </div>
+                <p>gépészmérnök</p>
+            </div>
+        </div>
+
+
+
+        <center>
+            <h1 class="listTitle">Technikai dolgozók</h1>
+        </center>
+        <div class="commandment">
+            <div class="personBackground">
+                <h3 class="personName">Bóbis Gyöngyike</h3>
+                <div class="person">
+                    <img src="Assets/Bóbis Gyöngyike.webp" alt="Image_BobisGyongyike" title="Bóbis Gyöngyike takarítónő" class="personImage">
+                </div>
+                <p>intézményi takarító</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Horváth Viktor János</h3>
+                <div class="person">
+                    <img src="Assets/Horváth Viktor.webp" alt="Image_HorvathViktor" title="Horváth Viktor János portás" class="personImage">
+                </div>
+                <p>portás</p>
+                <p>karbantartó</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Kiss Péter ferenc</h3>
+                <div class="person">
+                    <img src="Assets/Kiss Péter Ferenc.webp" alt="Image_KissPeterFerenc" title="Kiss Péter Ferenc rendszergazda" class="personImage">
+                </div>
+                <p>rendszergazda</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Nagy Margit Veronika</h3>
+                <div class="person">
+                    <img src="Assets/Nagy Margit.webp" alt="Image_NagyMargit" title="Nagy Margit Veronika titkárnő" class="personImage">
+                </div>
+                <p>iskolatitkár</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Tarjányi Mihály</h3>
+                <div class="person">
+                    <img src="Assets/Tarjányi Mihály.webp" alt="Image_TarjanyiMihaly" title="Tarjányi Mihály ügyelő" class="personImage">
+                </div>
+                <p>kollégiumi ügyelő</p>
+                <p>karbantartó</p>
+            </div>
+
+            <div class="personBackground">
+                <h3 class="personName">Tarjányi Andrásné</h3>
+                <div class="person">
+                    <img src="Assets/Tarjányi Andrásné.webp" alt="Image_TarjanyiAndrasne" title="Tarjányi Andrásné pénztáros" class="personImage">
+                </div>
+                <p>pénztáros</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -109,8 +316,6 @@
         </div>
         <p>© 2019 PG</p>
     </footer>
-
-    <script src="./script.js"></script>
 </body>
 </html>
 
