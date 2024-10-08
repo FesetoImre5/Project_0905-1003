@@ -759,3 +759,77 @@ footer{
     text-align: center;
     margin: 5px 0;
 }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=checkbox] {
+    margin: 8px 0;
+  }
+  label {
+    margin-bottom: 8px;
+    display: block;
+  }
+  button[type=submit], button[type=reset] {
+    width: 48%;
+    padding: 12px;
+    margin: 8px 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  button[type=reset] {
+    background-color: #f44336;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    button[type=submit], button[type=reset] {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+
+  /** {
+    box-sizing: border-box;
+  }*/
+  .ourpride {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .ourpride-item {
+    flex-basis: calc(33% - 20px);
+    margin-bottom: 20px;
+  }
+  .ourpride-item img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    .ourpride-item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .ourpride-item {
+      flex-basis: calc(100% - 20px);
+    }
+  }
