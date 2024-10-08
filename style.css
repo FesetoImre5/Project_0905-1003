@@ -807,9 +807,7 @@ footer{
     }
   }
 
-  /** {
-    box-sizing: border-box;
-  }*/
+/*OUR PRIDES*/
   .ourpride {
     display: flex;
     flex-wrap: wrap;
@@ -832,4 +830,17 @@ footer{
     .ourpride-item {
       flex-basis: calc(100% - 20px);
     }
+  }
+
+  /*CHILD CARE&PROTECTION*/
+  .chprot a {
+    text-decoration: none;
+    color: #fff;
+    right: 0;
+  }
+  .chprot ul {
+    list-style-type:disc;
+  }
+  .chprot ul li ul {
+    list-style-type:circle;
   }
