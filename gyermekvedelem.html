@@ -9,7 +9,7 @@
     <script src="script.js"></script>
     <title>Szent Benedek PG Technikum</title>
 </head>
-<body>
+<body class="childProtection">
     <div class="head">
         <div class="mainHeadDiv">
             <img src="Assets/Logo.webp" alt="Logo" title="A Kiskunfélegyházi Szent Benedek PG logója" class="logo headImage">
@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNav">
+    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -70,9 +70,9 @@
                 </div>
             </a>
         </div>
-        <div class="openButton" onclick="openClose()">
-            <img src="" alt="">
-        </div>
+    </div>
+    <div class="openButton" onclick="openClose()" id="OpenButton">
+        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
     </div>
 
     <div class="contentDiv">
@@ -112,8 +112,10 @@
             <label for="terms">Elolvastam és elfogadom az adatkezelési tájékoztatóban foglaltakat.</label>
           </div>
       
-          <button type="reset">Törlés</button>
-          <button type="submit">Elküld</button>
+          <div class="childProtectionButtons">
+            <button type="submit">Elküld</button>
+            <button type="reset">Törlés</button>
+          </div>
         </form>
       </div>
     </div>

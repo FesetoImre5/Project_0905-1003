@@ -394,7 +394,7 @@ a{
 
 
 .contentDiv{
-    background-color: rgba(122,122,122,0.25);
+    background-color: rgba(0,0,0,0.25);
     width: 75%;
     display: block;
     margin: 10px auto;
@@ -874,6 +874,29 @@ button[type=reset] {
 
 
 
+.childProtection ul{
+    text-align: left;
+}
+
+
+
+.childProtectionButtons{
+    display: flex;
+}
+
+
+
+.checkbox-group{
+    display: flex;
+}
+.checkbox-group label{
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+
+
 /*DATA MANAGEMENT INSTRUCTIONS*/
 
 
@@ -910,6 +933,20 @@ button[type=reset] {
     padding: 0 15px 5px 15px;
     border-bottom-right-radius: 25px;
 }
+.dataManagementDiv a{
+    color: white;
+    text-decoration: underline;
+}
+.dataManagementDiv a:hover{
+    color: lightgray;
+}
+.dataManagementDiv table{
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+.dataManagementDiv td{
+    border: 2px solid white;
+}
 
 
 
@@ -917,13 +954,6 @@ button[type=reset] {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: none;
-}
-.dataManagerInfo a{
-    color: white;
-    text-decoration: underline;
-}
-.dataManagerInfo a:hover{
-    color: lightgray;
 }
 
 
@@ -939,4 +969,59 @@ button[type=reset] {
 }
 .dataManagementCommandments ul{
     text-align: left;
+}
+
+
+
+.dataManagementGeneral{
+    border-bottom: none;
+}
+
+
+
+.dataManagementLaw{
+    border-bottom: none;
+}
+.dataManagementLaw ul{
+    text-align: left;
+}
+
+
+
+.dataManagementLawdoctoral{
+    border-bottom: none;
+}
+.dataManagementLawdoctoral ul{
+    text-align: left;
+}
+
+
+
+.dataManagementCookies{
+    border-bottom: none;
+}
+.dataManagementCookies ul{
+    text-align: left;
+}
+
+
+
+.dataManagementGoogle{
+    border-bottom: none;
+}
+
+
+
+.dataManagementWebpage{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.dataManagementWebpage ul{
+    text-align: left;
+}
+
+
+
+.dataManagementSubdivName{
+    margin-top: 40px;
 }

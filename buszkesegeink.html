@@ -26,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNav">
+    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -72,9 +72,9 @@
                 </div>
             </a>
         </div>
-        <div class="openButton" onclick="openClose()">
-            <img src="" alt="">
-        </div>
+    </div>
+    <div class="openButton" onclick="openClose()" id="OpenButton">
+        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
     </div>
 
     <div class="contentDiv">

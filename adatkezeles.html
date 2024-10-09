@@ -26,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="sideNav" id="sideNav">
+    <div class="sideNav" id="sideNavCollapsed" style="@media (max-width: 550px){display:none;}">
         <div class="sideNavBurg">
             <a href="https://szbi-kiskunfelegyhaza.e-kreta.hu/" target="_blank" rel="noopener">
                 <img src="Assets/kreta_logo.webp" alt="Kréta" title="E-Kréta" class="navImage">
@@ -72,9 +72,9 @@
                 </div>
             </a>
         </div>
-        <div class="openButton" onclick="openClose()">
-            <img src="" alt="">
-        </div>
+    </div>
+    <div class="openButton" onclick="openClose()" id="OpenButton">
+        <img src="Assets/Arrow.webp" alt="img_openArrow" title="Kinyitás" id="OpenArrow">
     </div>
 
     <div class="contentDiv">
@@ -88,19 +88,19 @@
         <div class="dataManagementDiv dataManagerInfo">
             <h2>Az adatkezelő adatai</h2>
 
-            <p>Adatkezelő megnevezése: Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum és Kollégium</p>
-            <p>Adatkezelő székhelye: 6100 Kiskunfélegyháza, Kossuth u. 24.</p>
+            <p><strong>Adatkezelő megnevezése:</strong> Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum és Kollégium</p>
+            <p><strong>Adatkezelő székhelye:</strong> 6100 Kiskunfélegyháza, Kossuth u. 24.</p>
 
             <p>
-                Adatkezelő elektronikus címe: 
+                <strong>Adatkezelő elektronikus címe:</strong> 
                 <a href="mailto:titkarsag@szbi-pg.hu">titkarsag@szbi-pg.hu</a>
             </p>
 
-            <p>Adatkezelő telefonszáma: +3676462332</p>
-            <p>Adatvédelmi tisztviselő:  VFK Data Pro. Kft.</p>
+            <p><strong>Adatkezelő telefonszáma:</strong> +3676462332</p>
+            <p><strong>Adatvédelmi tisztviselő:</strong>  VFK Data Pro. Kft.</p>
 
             <p>
-                Adatvédelmi tisztviselő elérhetősége:
+                <strong>Adatvédelmi tisztviselő elérhetősége:</strong>
                 <a href="mailto:info@vfkdatapro.hu">info@vfkdatapro.hu</a>
             </p>
         </div>
@@ -129,7 +129,7 @@
         </div>
 
 
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementGeneral">
             <h2>Általános adatvédelmi irányelvek és az adatok minősége:</h2>
 
             <p>Személyes adat csak meghatározott célból, jog gyakorlása és kötelezettség teljesítése érdekében kezelhető. Az adatkezelésnek minden szakaszában meg kell felelnie az     adatkezelés céljának.</p>
@@ -150,16 +150,16 @@
         </div>
 
 
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementLaw">
             <h2>Az adatkezeléssel kapcsolatos érintetti jogok:</h2>
 
             <div>
-                <p>Az előzetes tájékozódáshoz való jog (GDPR 13. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>Az előzetes tájékozódáshoz való jog (GDPR 13. cikk):</strong></p>
                 <p>Az érintett jogosult arra, hogy az adatkezeléssel összefüggő tényekről az adatkezelés megkezdését megelőzően tájékoztatást kapjon – amely jog érvényesülését jelen tájékoztató szolgálja.</p>    
             </div>
             
             <div>
-                <p>A hozzáféréshez való jog (GDPR 15. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>A hozzáféréshez való jog (GDPR 15. cikk):</strong></p>
                 <p>Az érintett jogosult arra, hogy a fent megadott elérhetőségeken keresztül Adatkezelőtől tájékoztatást kérjen arra vonatkozóan, hogy személyes adatainak kezelése folyamatban van-e, és ha ilyen adatkezelés folyamatban van, jogosult arra, hogy megismerje azt, hogy:</p>    
                 
                 <p>Adatkezelő</p>
@@ -181,17 +181,17 @@
             </div>
 
             <div>
-                <p>A helyesbítéshez való jog (GDPR 16. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>A helyesbítéshez való jog (GDPR 16. cikk):</strong></p>
                 <p>Az érintett személy a fent megadott elérhetőségeken keresztül kérheti, hogy Adatkezelő módosítsa valamely személyes adatát. Amennyiben az érintett hitelt érdemlően igazolni tudja a helyesbített adat pontosságát, Adatkezelő a kérést legfeljebb egy hónapon belül teljesíti, és erről az általa megadott elérhetőségen értesíti az érintett személyt.</p>
             </div>
 
             <div>
-                <p>A törléshez való jog („az elfeledtetéshez való jog”) (GDPR 17. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>A törléshez való jog („az elfeledtetéshez való jog”) (GDPR 17. cikk):</strong></p>
                 <p>A tájékoztatóban ismertetett adatkezelések kapcsán az érintett adatai törlését is kérheti, amennyiben annak nincs jogszabályi akadálya, ezesetben Adatkezelő a kérésnek haladéktalanul eleget tesz, ellenkező esetben Adatkezelő a törlés megtagadásának indokáról egy hónapon belül.</p>
             </div>
 
             <div>
-                <p>A zároláshoz (adatkezelés korlátozásához) való jog (GDPR 18. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>A zároláshoz (adatkezelés korlátozásához) való jog (GDPR 18. cikk):</strong></p>
                 <p>Az érintett személy a fent megadott elérhetőségeken keresztül kérheti, hogy a személyes adatai kezelését Adatkezelő korlátozza (az adatkezelés korlátozott jellegének egyértelmű jelölésével és az egyéb adatoktól elkülönített kezelés biztosításával) amennyiben</p>
                 <p>- vitatja a személyes adatai pontosságát (ebben az esetben Adatkezelő arra az időtartamra korlátozza az adatkezelést, amíg ellenőrzi a személyes adatok pontosságát);</p>
                 <p>- az adatkezelés jogellenes, és az érintett ellenzi az adatok törlését, és ehelyett kéri azok felhasználásának korlátozását;</p>
@@ -200,19 +200,19 @@
             </div>
 
             <div>
-                <p>Az adathordozhatósághoz való jog (GDPR 20. cikk):</strong></p>
+                <p class="dataManagementSubdivName"><strong>Az adathordozhatósághoz való jog (GDPR 20. cikk):</strong></strong></p>
                 <p>Ha az adatkezelés jogalapja önkéntes hozzájárulás vagy szerződéses jogalap, és az adatkezelés automatizált módon történik, akkor az érintett jogosult arra, hogy a rá vonatkozó, általa az Adatkezelő rendelkezésére bocsátott személyes adatokat tagolt, széles körben használt, géppel olvasható́ formátumban megkapja.</p>
                 <p>Az adathordozhatósághoz való jog gyakorlása során az érintett jogosult arra, hogy – ha ez technikailag megvalósítható́ – kérje a személyes adatok adatkezelők közötti közvetlen továbbítását. Az érintett ezen jogának gyakorlása nem érintheti mások jogait és szabadságait (GDPR 20. cikk (4)).</p>
             </div>
 
             <div>
-                <p>A tiltakozáshoz való jog (GDPR 21. cikk):</p>
+                <p class="dataManagementSubdivName"><strong>A tiltakozáshoz való jog (GDPR 21. cikk):</strong></p>
                 <p>Az érintett személy a fent megadott elérhetőségeken keresztül saját helyzetével kapcsolatos okokból bármikor tiltakozhat az adatkezelés ellen, ha álláspontja szerint Adatkezelő a személyes adatát a jelen adatkezelési tájékoztatóban megjelölt céllal összefüggésben nem megfelelően kezelné. Ebben az esetben a Adatkezelőnek kell igazolnia, hogy a személyes adat kezelését olyan kényszerítő erejű jogos okok indokolják, amelyek elsőbbséget élveznek az érintett érdekeivel, jogaival és szabadságaival szemben, vagy amelyek jogi igények előterjesztéséhez, érvényesítéséhez vagy védelméhez kapcsolódnak.</p>
             </div>
         </div>
 
 
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementLawdoctoral">
             <h2>Jogorvoslattal kapcsolatos tájékoztatás:</h2>
 
             <p>A személyes adatok kezeléséhez fűződő jogainak megsértése esetén Ön az alábbi jogorvoslati lehetőségekkel élhet:</p>
@@ -231,7 +231,7 @@
         </div>
         
         
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementCookies">
             <h2>Weboldal megtekintése során alkalmazott cookie-k (a továbbiakban: süti, vagy cookie):</h2>
 
             <p>A cookie-k, vagy más néven süti-k olyan fájlok, amelyek a számítógépen (vagy más internetképes készüléken) tárolódnak, akkor amikor felkeresi az adott weboldalt. Egy süti általánosságban tartalmazza a webhely nevét, ahonnan az jött, a saját élettartamát (vagyis, hogy milyen hosszan marad a készüléken) és az értékét, ami általában egy véletlenszerűen generált egyedi szám. Lejárat alapján kétféle sütit használ Adatkezelő a weboldalán: az un. munkamenet sütiket és kényelmi sütiket.</p>
@@ -241,18 +241,18 @@
             <p>Mivel tiszteletben tartjuk a személyes adatok védelméhez fűződő jogait Ön, mint látogató dönti el, hogy engedélyezi-e meghatározott típusú sütik használatát. A sütikre  vonatkozó beállításokat a weboldalunkra történő első látogatása alkalmával tudja megtenni. Amennyiben a későbbiekben ezen beállításokon módosítani szeretne, úgy azt a Cookie    beállításokra kattintva teheti meg.</p>
 
             <div>
-                <p>Munkamenet sütik</p>
+                <p class="dataManagementSubdivName"><strong>Munkamenet sütik</strong></p>
                 <p>A munkamenet sütik a honlap böngészéséhez, a funkciók használatához szükségesek, többek között lehetővé teszik a látogató által adott oldalon, funkcióban vagy szolgáltatásban végzett műveletek megjegyzését. A "munkamenet sütik" alkalmazása nélkül a honlap zökkenőmentes használata nem garantálható. Érvényességi idejük az adott látogatás időtartamára terjed ki, a "sütik" a munkamenet végén vagy a böngésző bezárásával automatikusan törlődnek.</p>
             </div>
 
             <div>
-                <p>Kényelmi sütik</p>
+                <p class="dataManagementSubdivName"><strong>Kényelmi sütik</strong></p>
                 <p>Ezen sütik lehetővé teszik, hogy adatkezelő weboldala megjegyezze, hogy milyen működési módot választott (például: elfogadta a süti tájékoztatót és a kereső eredmény listájában kapott találatok milyen rendezési mód alapján kerüljenek megjelenítésre). Ez annak érdekében történik, hogy a következő látogatás alkalmával ne kelljen újra és újra elfogadnia a süti tájékoztatót vagy beállítania, hogy milyen rendezési elv szerint szeretné megtekinetni az oldalon megjelenített tartalmakat. A preferenciákat tároló sütikben lévő információk nélkül honlapunk kevésbé gördülékenyen ugyan, de működhet.</p>
                 <p>A kényelmi sütikben személyes adatokat nem rögzítünk, kizárólag egy azonosítószámot tárolunk, melyből az oldal értesül, hogy a sütitájékoztató korábban elfogadásra került.</p>
             </div>
 
             <div>
-                <p>Sütik beállítása, letiltása</p>
+                <p class="dataManagementSubdivName"><strong>Sütik beállítása, letiltása</strong></p>
                 <p>A modern böngészők lehetővé teszik a süti beállítások módosítását. A fenti beállításokon túl a böngészők lehetőséget adnak a süti-beállítások megváltoztatására. A   legtöbb böngésző alapértelmezettként automatikusan elfogadja a sütiket, de ez megváltoztatható annak érdekében, hogy a beállítást követően megakadályozza az automatikus  elfogadást.</p>
                 <p>Ha többet szeretne megtudni a böngésző beállításainak módosításáról, nézze át a böngésző utasításait vagy súgóját.</p>
                 <p>A legnépszerűbb böngészők süti-beállításairól az alábbi linkeken tájékozódhat:</p>
@@ -352,7 +352,7 @@
         </div>
 
 
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementGoogle">
             <h2>Google Analytics:</h2>
 
             <p>Adatkezelő weboldala a „Google Analytics”, a Google Inc. (a továbbiakban „Google”) webelemző szolgáltatását használja. A Google Analytics sütiket, vagyis a számítógépen tárolódó szövegfájlokat használ, amelyek segítségével elemezni lehet, hogy hogyan használja Adatkezelő weboldalát. A sütik által generált, a használatra vonatkozó információkat a Google saját szervereire továbbítja, és ott tárolja. Adatkezelő webhelyén aktív az IP-cím névtelenítése, így az Európai Unió tagállamaiban, vagy az Európai Gazdasági Térséget érintő szerződött államokon belül a Google a továbbítás előtt azonosításra alkalmatlanná teszi az IP-címet. A böngésző által, a Google Analytics révén továbbított IP-cím nem kapcsolódik össze a Google-ból származó egyéb adatokkal. A böngésző megfelelő beállításával megakadályozhatja a cookie-k tárolását a készülékén.</p>
@@ -383,7 +383,7 @@
         </div>
 
 
-        <div class="dataManagementDiv">
+        <div class="dataManagementDiv dataManagementWebpage">
             <h2>Weboldalon látogatása kapcsán kezelt személyes adatok:</h2>
 
             <p>Önként megadott személyes adatok (A GDPR 6. cikk (1) bekezdése a) pontja szerinti önkéntes hozzájárulás jogalapja alapján):</p>
@@ -410,27 +410,27 @@
             <p>Önkéntesen megadott személyes adatainak továbbítására alapvetően nem kerül sor.</p>
 
             <div>
-                <p>Alkalmazott adatbiztonsági intézkedések</p>
+                <p class="dataManagementSubdivName"><strong>Alkalmazott adatbiztonsági intézkedések</strong></p>
 
                 <p>A jelen pont az Adatkezelő által általánosan alkalmazott adatbiztonsági intézkedéseket foglalja össze. Ezen intézkedések között találhatóak adminisztratív, technológiai, fizikai és technikai eljárások, amelyek arra szolgálnak, hogy megvédjék a személyes adatokat az arra nem jogosult használattól, hozzáféréstől vagy nyilvánosságra hozataltól, valamint a személyes adatok elvesztésétől, megsemmisítésétől vagy módosulásától.</p>
                 <p>Az adatbiztonság kiterjed a fizikai és logikai eszközökre, ezek használatára és kezelésére, valamint a biztonsággal kapcsolatos szabályozásra és eljárásokra. Fentiekkel arról gondoskodunk, hogy a kezelt adatokhoz illetéktelen személy ne férhessen hozzá, ne hozhassa nyilvánosságra, ne továbbíthassa, valamint ne módosíthassa vagy törölhesse azokat.</p>
             </div>
 
             <div>
-                <p>Az adatbiztonsági kockázat</p>
+                <p class="dataManagementSubdivName"><strong>Az adatbiztonsági kockázat</strong></p>
             
                 <p>A személyes adatok véletlen vagy jogellenes megsemmisülése, jogosulatlan nyilvánosságra hozatala vagy a hozzájuk való jogosulatlan hozzáférés, az adatok elvesztése, megváltoztatása, mind-mind Adatbiztonsági kockázatot jelent.</p>
             </div>
 
             <div>
-                <p>Adatkezelő adatbiztonsági intézkedései</p>
+                <p class="dataManagementSubdivName"><strong>Adatkezelő adatbiztonsági intézkedései</strong></p>
 
                 <p>Adatkezelő kiemelt figyelmet fordít a rendszerek és eljárások bizalmas jellegére, integritására, rendelkezésre állására és ellenálló képességére. Adatkezelő az általa   alkalmazott technológiák használatával és ellenőrzésével, mindent megtesz, hogy elkerülje a személyes adatok álnevesítését és titkosítását, incidens esetén elérje a  hozzáférés és a rendelkezésre állás visszaállítását.</p>
                 <p>Adatkezelő informatikai rendszerét és eszközeit úgy üzemelteti, hogy a személyes adatok csak az arra feljogosítottak számára legyenek hozzáférhetőek (rendelkezésre állás); hitelessége és hitelesítése biztosított legyen (adatkezelés hitelessége); változatlansága igazolható legyen (adatintegritás); a jogosulatlan hozzáférés ellen védettek legyenek (adat bizalmassága).</p>
             </div>
 
             <div>
-                <p>Személyes adatok kezelése az adatbiztonság tükrében:</p>
+                <p class="dataManagementSubdivName"><strong>Személyes adatok kezelése az adatbiztonság tükrében:</strong></p>
 
                 <p>A személyes adatokhoz a megfelelő szerződéses rendelkezéseknek, a vonatkozó hatályos jogszabályoknak és belső előírásoknak megfelelően, Adatkezelő arra feljogosított    és megfelelő hozzáféréssel rendelkező munkatársai férhetnek csak hozzá.</p>
                 <p>Adataidhoz kizárólag a szükséges mértékben engedélyezi Adatkezelő, az adatok kezelése/feldolgozása kapcsán munkaköri feladatai ellátásában érintett munkavállalói számára a hozzáférést.</p>
@@ -447,6 +447,8 @@
         </div>
         <p>© 2019 PG</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
 
