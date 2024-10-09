@@ -831,6 +831,9 @@ button[type=reset] {
 
 
 
+
+
+
 /*OUR PRIDES*/
 
 
@@ -864,6 +867,78 @@ button[type=reset] {
 
 
 
+  /*DOCUMENTS*/
+
+
+
+  .docContainer {
+    width: 60%;
+    margin: auto;
+}
+.docBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.docBlock .text {
+    flex-grow: 1;
+}
+.docBlock .button {
+    background-color: #4c65af;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.docBlock .button:hover{
+    background-color: #243874;
+}
+
+
+
+.docTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+.docTh, .docTd {
+    border: 1px solid #aeaeae;
+    padding: 8px;
+}
+.docTh {
+    background-color: #4c65af;
+    color: white;
+}
+.docTr:nth-child(even) {
+    background-color: #c1c1c1;
+}
+.docTr:hover {
+    background-color: #aeaeae;
+}
+.docPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.docPagination button {
+    background-color: #4c65af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.docPagination button.active {
+    background-color: #333;
+  
+  
+  
 /*COMPETITIONS*/
 
 

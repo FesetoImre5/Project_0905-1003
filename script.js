@@ -119,3 +119,35 @@ window.addEventListener('resize', function() {
         openDaysImage.style.display = "block";
     }
 });
+
+/*DOCUMENTS*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currentPage = 1;
+    const rows = document.querySelectorAll(".docTr");
+    const numPages = Math.ceil(rows.length / 10);
+
+    function showPage(page) {
+        rows.forEach((row, index) => {
+            row.style.display = (index >= (page - 1) * 10 && index < page * 10) ? "table-row" : "none";
+        });
+        document.querySelectorAll(".docPagination button").forEach(btn => {
+            btn.classList.remove("active");
+        });
+        document.querySelector(`.docPagination button[data-page='${page}']`).classList.add("active");
+    }
+
+    const pagination = document.querySelector(".docPagination");
+    for (let i = 1; i <= numPages; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i;
+        btn.dataset.page = i;
+        btn.classList.add(i === 1 ? "active" : "");
+        btn.addEventListener("click", () => {
+            showPage(i);
+        });
+        pagination.appendChild(btn);
+    }
+
+    showPage(currentPage);
+});
