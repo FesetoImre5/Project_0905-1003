@@ -404,6 +404,13 @@ a{
 
 
 
+.cardPages{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 footer{
     background-color: #3f486c;
     width: 100%;
@@ -492,6 +499,7 @@ footer{
     color: white;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
+    border-radius: 25px;
 }
 
 
@@ -854,6 +862,32 @@ button[type=reset] {
   }
 }
 
+
+
+/*COMPETITIONS*/
+
+
+
+.EngRace{
+    background-image: url(https://szbi-pg.hu/images/panel/angol3bk.jpg);
+}
+
+
+
+.GermRace{
+    background-image: url(https://szbi-pg.hu/images/panel/n%C3%A9metk.jpg);
+}
+
+
+
+.ITRace{
+    background-image: url(https://szbi-pg.hu/images/panel/infok.jpg);
+}
+
+
+
+.BrainRace{
+    background-image: url(https://szbi-pg.hu/images/panel/agycsavar%C3%B32k.jpg);
 
 
 /*CHILD CARE&PROTECTION*/
