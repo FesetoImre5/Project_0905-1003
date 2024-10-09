@@ -394,7 +394,7 @@ a{
 
 
 .contentDiv{
-    background-color: rgba(122,122,122,0.25);
+    background-color: rgba(0,0,0,0.25);
     width: 75%;
     display: block;
     margin: 10px auto;
@@ -768,90 +768,99 @@ footer{
     margin: 5px 0;
 }
 
-  .container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  input[type=text], input[type=email], input[type=tel], textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=checkbox] {
-    margin: 8px 0;
-  }
-  label {
-    margin-bottom: 8px;
-    display: block;
-  }
+
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  margin: 8px 0;
+}
+
+
+
+label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+
+
+button[type=submit], button[type=reset] {
+  width: 48%;
+  padding: 12px;
+  margin: 8px 1%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+button[type=reset] {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
   button[type=submit], button[type=reset] {
-    width: 48%;
-    padding: 12px;
-    margin: 8px 1%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 100%;
+    margin: 8px 0;
   }
-  button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-  }
-  button[type=reset] {
-    background-color: #f44336;
-    color: white;
-  }
-  @media screen and (max-width: 600px) {
-    button[type=submit], button[type=reset] {
-      width: 100%;
-      margin: 8px 0;
-    }
-  }
+}
+
+
 
 /*OUR PRIDES*/
-  .ourpride {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .ourpride-item {
-    flex-basis: calc(33% - 20px);
-    margin-bottom: 20px;
-  }
-  .ourpride-item img {
-    width: 100%;
-    height: auto;
-  }
-  @media screen and (max-width: 600px) {
-    .ourpride-item {
-      flex-basis: calc(50% - 20px);
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .ourpride-item {
-      flex-basis: calc(100% - 20px);
-    }
-  }
 
-  /*CHILD CARE&PROTECTION*/
-  .chprot a {
-    text-decoration: none;
-    color: #fff;
-    right: 0;
+
+
+.ourpride {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ourpride-item {
+  flex-basis: calc(33% - 20px);
+  margin-bottom: 20px;
+}
+.ourpride-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .ourpride-item {
+    flex-basis: calc(50% - 20px);
   }
-  .chprot ul {
-    list-style-type:disc;
+}
+@media screen and (max-width: 400px) {
+  .ourpride-item {
+    flex-basis: calc(100% - 20px);
   }
-  .chprot ul li ul {
-    list-style-type:circle;
-  }
+}
 
 
 
@@ -879,4 +888,174 @@ footer{
 
 .BrainRace{
     background-image: url(https://szbi-pg.hu/images/panel/agycsavar%C3%B32k.jpg);
+
+
+/*CHILD CARE&PROTECTION*/
+
+
+
+.chprot a {
+  text-decoration: none;
+  color: #fff;
+  right: 0;
+}
+.chprot ul {
+  list-style-type:disc;
+}
+.chprot ul li ul {
+  list-style-type:circle;
+}
+
+
+
+.childProtection ul{
+    text-align: left;
+}
+
+
+
+.childProtectionButtons{
+    display: flex;
+}
+
+
+
+.checkbox-group{
+    display: flex;
+}
+.checkbox-group label{
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+
+
+/*DATA MANAGEMENT INSTRUCTIONS*/
+
+
+
+.dataTitle{
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    border-bottom: none;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.dataTitle h1{
+    font-size: 50px;
+    margin: 0;
+}
+.dataTitle h4{
+    margin: 0;
+}
+
+
+
+.dataManagementDiv{
+    border: 2px solid white;
+    padding: 10px;
+}
+.dataManagementDiv h2{
+    margin: 0;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding: 0 15px 5px 15px;
+    border-bottom-right-radius: 25px;
+}
+.dataManagementDiv a{
+    color: white;
+    text-decoration: underline;
+}
+.dataManagementDiv a:hover{
+    color: lightgray;
+}
+.dataManagementDiv table{
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+.dataManagementDiv td{
+    border: 2px solid white;
+}
+
+
+
+.dataManagerInfo{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: none;
+}
+
+
+
+.dataManagementStarter{
+    border-bottom: none;
+}
+
+
+
+.dataManagementCommandments{
+    border-bottom: none;
+}
+.dataManagementCommandments ul{
+    text-align: left;
+}
+
+
+
+.dataManagementGeneral{
+    border-bottom: none;
+}
+
+
+
+.dataManagementLaw{
+    border-bottom: none;
+}
+.dataManagementLaw ul{
+    text-align: left;
+}
+
+
+
+.dataManagementLawdoctoral{
+    border-bottom: none;
+}
+.dataManagementLawdoctoral ul{
+    text-align: left;
+}
+
+
+
+.dataManagementCookies{
+    border-bottom: none;
+}
+.dataManagementCookies ul{
+    text-align: left;
+}
+
+
+
+.dataManagementGoogle{
+    border-bottom: none;
+}
+
+
+
+.dataManagementWebpage{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.dataManagementWebpage ul{
+    text-align: left;
+}
+
+
+
+.dataManagementSubdivName{
+    margin-top: 40px;
 }
