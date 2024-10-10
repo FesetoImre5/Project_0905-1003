@@ -89,7 +89,9 @@ setTimeout(function() {
         let openDaysImage = document.getElementById("openDaysImage");
         openDaysImage.style.display = "block";
     }
+},1);
 
+setTimeout(() => {
     if (window.innerWidth <= 550){
         let sideNavBar = document.getElementById("sideNavCollapsed");
         sideNavBar.style.display = "none";
@@ -103,11 +105,21 @@ setTimeout(function() {
 window.addEventListener('resize', function() {
     if (window.innerWidth <= 550) {
         let sideNavBar = document.getElementById("sideNavCollapsed");
+        let openButton = document.getElementById("OpenButton");
+        let openArrow = document.getElementById("OpenArrow");
+
         sideNavBar.style.display = "none";
+        openButton.style.top = "95px";
+        openArrow.style.transform = "rotate(0deg)";
     }
     else{
         let sideNavBar = document.getElementById("sideNavCollapsed");
+        let openButton = document.getElementById("OpenButton");
+        let openArrow = document.getElementById("OpenArrow");
+
         sideNavBar.style.display = "block";
+        openButton.style.top = "595px";
+        openArrow.style.transform = "rotate(180deg)";
     }
 
     if (window.innerWidth <= 735){
