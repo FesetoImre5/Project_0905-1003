@@ -921,14 +921,11 @@ button[type=reset] {
     padding: 8px;
 }
 .docTh {
-    background-color: #4c65af;
+    background-color: #243874;
     color: white;
 }
-.docTr:nth-child(even) {
-    background-color: #c1c1c1;
-}
 .docTr:hover {
-    background-color: #aeaeae;
+    background-color: #4c65af;
 }
 .docPagination {
     display: flex;
@@ -1145,4 +1142,27 @@ button[type=reset] {
 
 .dataManagementSubdivName{
     margin-top: 40px;
+}
+
+
+
+/*INSCHOOLING*/
+
+
+
+.branches a{
+    color: white;
+}
+.branches a:hover{
+    color: rgb(150,150,150);
+}
+
+
+
+.sppb-column a{
+    color: white;
+    text-decoration: underline;
+}
+.sppb-column a{
+    color: rgb(150,150,150);
 }
