@@ -70,7 +70,7 @@ function openClose(){
 
     if (sideNavBar.style.display == "none"){
         sideNavBar.style.display = "block";
-        openButton.style.top = "515px";
+        openButton.style.top = "595px";
         openArrow.style.transform = "rotate(180deg)";
     }
     else{
