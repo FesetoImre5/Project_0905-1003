@@ -504,6 +504,15 @@ footer{
 
 
 
+.texts{
+    margin-top: 50px;
+}
+.texts ul{
+    text-align: left;
+}
+
+
+
 /*ELÉRHETŐSÉGEK*/
 
 
@@ -974,6 +983,9 @@ button[type=reset] {
   color: #fff;
   right: 0;
 }
+.chprot a:hover {
+    color: rgb(150, 150, 150);
+  }
 .chprot ul {
   list-style-type:disc;
 }

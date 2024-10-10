@@ -120,7 +120,7 @@ window.addEventListener('resize', function() {
     }
 });
 
-/*DOCUMENTS*/
+/*DOCUMENTS
 
 document.addEventListener("DOMContentLoaded", function() {
     let currentPage = 1;
@@ -150,4 +150,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     showPage(currentPage);
-});
+});*/
